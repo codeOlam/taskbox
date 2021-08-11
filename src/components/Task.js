@@ -8,10 +8,10 @@ export default function Task({task: {id, title, state}, onArchiveTask, onPinTask
                 <input
                 type="checkbox"
                 defaultChecked={state === 'TASK_ARCHIVED'}
-                disable={true}
+                disable="true"
                 name="checked"
                 />
-                <span className="checkbox-custom" onclick={() => onArchiveTask(id)} />
+                <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
             </label>
             <div className="title">
                <input 
